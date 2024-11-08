@@ -1,0 +1,545 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="./output.css" rel="stylesheet">
+    <style>
+    @layer utilities {
+        .clip-wave {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 60% 95%, 0% 80%, 0% 0%);
+    }
+        .clip-bottom {
+        clip-path: polygon(0% 20%, 40% 5%, 100% 20%, 100% 100%, 0% 100%);
+    }
+    }
+    @media (min-width:1030px) {
+        .container{
+        max-width: 1030px;
+        min-height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        }
+    }
+    @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+    }
+
+    .animate-slide {
+    animation: slide 15s linear infinite;
+    }
+    </style>
+    </head>
+    <body class="text-white">
+    <!-- navbar -->
+    <section class="navbar md:h-[600px] min-h-screen md:min-w-full bg-no-repeat bg-cover clip-wave bg-black bg-hero-bg">
+    <nav class="w-full h-[69px]relative top-5 py-2 px-4 flex">
+        <div class="container max-w-[1000px] h-full mx-auto flex justify-between items-center px-4">
+        <div class="logo text-[24px] text-white font-semibold">
+            <a href="#">a<span class="text-red-700">v</span>o</a>
+        </div>
+        <div class="menu-content text-white">
+            <ul class="md:flex md:gap-11 hidden ">
+            <li class="hover:text-red-700 transition-all duration-200 ease-linear cursor-pointer"><a href="home.html">Home</a></li>
+            <li class="hover:text-red-700 transition-all duration-200 ease-linear cursor-pointer"><a href="about.html">About us</a></li>
+            <li class="hover:text-red-700 transition-all duration-200 ease-linear cursor-pointer"><a href="work.html">Work</a></li>
+            <li class="hover:text-red-700 transition-all duration-200 ease-linear cursor-pointer"><a href="blog.html">Blog</a></li>
+            <li class="hover:text-red-700 transition-all duration-200 ease-linear cursor-pointer"><a href="contact.html">Contact</a></li>
+            </ul> 
+            </div>
+            </div>
+    </nav>
+    <!-- middle of section1-->
+        <div class="sm:max-w-[1030px] sm:h-full min-h-screen mx-auto px-[15px]">
+            <div class="row sm:h-full sm:w-full min-h-screen flex justify-center items-center mt-10">
+                <div class="mid-row sm:h-[278px] sm:w-5/6 w-screen sm:flex sm:justify-between sm:items-center flex-wrap">
+                    <!-- left side -->
+                        <div class="md:w-[388px] sm:mb-0 mb-6 sm:mt-0 mt-20 w-4/6 md:h-[278px] h-[500px] sm:ml-0 ml-5">
+                            <h1 class="sm:w-[388px] w-full sm:h-[132px] h-[200px] sm:text-[40px] text-3xl font-nono uppercase mb-5 leading-[44px] ">we  create minimal & modern websites</h1>
+                            <p class="sm:h-[48px] h-[150px] sm:w-[388px] mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                            <p class="sm:h-[54px] sm:w-[388px] "><button class="py-4 px-6 bg-[#D1002C]">start project</button></p>
+                        </div>
+                        <!-- right side -->
+                            <div class=" w-[145px] h-[128px] sm:ml-0 mx-5 sm:flex-none flex">
+                                <h4 class="text-[40px] font-nono font-bold text-center pr-4">21</h4>
+                                <p class=" uppercase h-[48px] w-[145px] text-center">years of experience</p>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 2nd section -->
+    <section class="text-black py-48 md:min-h-screen min-h-max w-full flex justify-center">
+        <div class="container md:mx-auto px-[15px]"> 
+          <!-- about us heading -->
+            <!-- row1 -->
+            <div class="row1 flex justify-center content-center h-[110px]">
+            <div class="mb-12 w-full items-center">
+              <h2 class="mb-2 font-extrabold font-nono text-4xl text-center">About us</h2>
+            </div>
+            </div>
+            <!-- row2 -->
+            <div class="row w-full md:h-[158px] flex md:flex-row flex-col">
+              <!-- ui/ux design row -->
+              <div class="h-full md:w-[200px] w-full flex flex-col items-stretch align-middle px-[15px]">
+                <div class="h-[78px] w-[100px] mx-auto flex justify-center"><img src="/ux-design.png" height="60px" width="60px" alt=""></div>
+                <div class="py-6 h-[78px] w-full">
+                  <h3 class="mb-2 text-center font-semibold">UI/UX Design</h3>
+                </div>
+              </div>
+              <!-- web development-->
+              <div class="h-full md:w-[200px] w-full flex flex-col items-stretch align-middle px-[15px]">
+                <div class="h-[78px] w-[100px] mx-auto flex justify-center"><img src="/web-programming.png" height="60px" width="60px" alt=""></div>
+                <div class="py-6 h-[78px] w-full">
+                  <h3 class="mb-2 text-center font-semibold">web-programming</h3>
+                </div>
+              </div>
+              <!-- mobile app -->
+              <div class="h-full md:w-[200px] w-full flex flex-col items-stretch align-middle px-[15px]">
+                <div class="h-[78px] w-[100px] mx-auto flex justify-center"><img src="/product-design.png" height="60px" width="60px" alt=""></div>
+                <div class="py-6 h-[78px] w-full">
+                  <h3 class="mb-2 text-center font-semibold">product design</h3>
+                </div>
+              </div>
+              <!-- booking -->
+              <div class="h-full md:w-[200px] w-full flex flex-col items-stretch align-middle px-[15px]">
+                <div class="h-[78px] w-[100px] mx-auto flex justify-center"><img src="/booking.png" height="60px" width="60px" alt=""></div>
+                <div class="py-6 h-[78px] w-full">
+                  <h3 class="mb-2 text-center font-semibold">mobile app</h3>
+                </div>
+              </div>
+              <!-- seo -->
+              <div class="h-full md:w-[200px] w-full flex flex-col items-stretch align-middle px-[15px]">
+                <div class="h-[78px] w-[100px] mx-auto flex justify-center"><img src="/ux-design.png" height="60px" width="60px" alt=""></div>
+                <div class="py-6 h-[78px] w-full">
+                  <h3 class="mb-2 text-center font-semibold">UI/UX Design</h3>
+                </div>
+              </div>
+            </div>
+              <!-- about welcome row -->
+                <!-- row3 -->
+              <div class="w-full md:h-[456px] h-auto py-5 md:flex flex-wrap">
+                <!-- left side -->
+              <div class= "md:w-2/3 w-full md:h-[360px] h-auto px-[15px]">
+                <div class="md:h-full w-full md:flex flex-wrap">
+                  <!-- inner left 50% -->
+                  <div class="md:w-1/2 w-full px-[15px]">
+                    <div class="h-full w-full">
+                      <div class="text-right">
+                        <h3 class="mb-2 text-3xl font-nono font-bold">Welcome to AVO A Personal Porfolio Web Agency</h3>
+                        <p class="mb-4 text-[#a0a0b4]">
+                          Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A mdall river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- inner right 50% -->
+                  <div class="md:w-1/2 w-full md:h-full h-[300px] px-[15px] bg-cover object-cover bg-no-repeat" style="background-image: url('/about\ \(2\).jpeg');"></div>
+                </div>
+              </div>
+              <!-- right side -->
+              <div class="md:w-1/3 w-full md:h-[360px] h-auto px-[15px]">
+                <div>
+                  <p class="mb-4 text-[#a0a0b4]">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A mdall river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                  </p>
+                  <p class="mb-4">
+                    <button class="bg-[#d1002c] py-[6px] px-3 rounded-md text-white">view all projects</button>
+                  </p>
+                </div>
+                <div>
+                </div>
+              </div>
+              </div>
+              <!-- row4 -->
+                <div class="pt-2 md:h-[176px] h-auto md:flex flex-wrap">
+                  <div class="md:w-1/3 w-full h-full px-[15px]">
+                    <div class="flex">
+                      <span class="text-5xl text-[#D1002C]">01</span>
+                      <div class="text px-[15px]">
+                        <h3 class="text-lg font-nono font-semibold mb-2">Search Engine Optimization</h3>
+                        <p class="text-base font-nono mb-4">Far far away, behind the word mountains</p>
+                      </div>
+                    </div>
+                </div>
+                  <div class="md:w-1/3 w-full h-full px-[15px]">
+                    <div class="flex">
+                      <span class="text-5xl text-[#D1002C]">02</span>
+                      <div class="text px-[15px]">
+                        <h3 class="text-lg font-nono font-semibold mb-2">Search Engine Optimization</h3>
+                        <p class="text-base font-nono mb-4">Far far away, behind the word mountains</p>
+                      </div>
+                    </div>
+                </div>
+                  <div class="md:w-1/3 w-full h-full px-[15px]">
+                    <div class="flex">
+                      <span class="text-5xl text-[#D1002C]">03</span>
+                      <div class="text px-[15px] ">
+                        <h3 class="text-lg font-nono font-semibold mb-2">Search Engine Optimization</h3>
+                        <p class="text-base font-nono mb-4">Far far away, behind the word mountains</p>
+                      </div>
+                    </div>
+                </div>
+                </div>
+<!-- section3 -->
+<section class="w-full py-48 text-black">
+    <div class="mb-12 w-full ">
+        <h2 class="mb-2 text-4xl font-nono font-extrabold capitalize text-center">Our Works</h2>
+    </div>
+    <div class="container max-w-[1000px] min-h-[4736px] mx-auto px-[15px]">
+        <!-- 1st line -->
+        <div class="sm:h-[500px] h-screen w-full">
+            <div class="sm:h-[550px] h-screen w-full flex sm:flex-row flex-col items-center">
+                <div class="left h-[550px] sm:w-[40%] w-full bg-cover bg-no-repeat object-cover" style="background-image: url('/work1.jpeg');"></div>
+                <div class="rigt h-[360px] sm:w-[60%] w-full ">
+                    <div class="sm:pt-5 sm:pl-5 h-full">
+                        <div class="h-full w-full px-4">
+                            <div class="top">
+                                <span>Web Design</span>
+                                <h2 class="mb-2 font-bold sm:text-[40px] text-3xl">Cassette tape</h2>
+                            </div>
+                            <div class="absolute">
+                                <p class="mb-[30px] sm:w-[469px] w-1/2 sm:h-[57px] h-[120px] text-[#a0a0b4]">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                <div class="icon flex align-middle items-center mb-4">
+                                    <div class="h-[60px] w-[60px] rounded-full bg-cover bg-no-repeat object-cover" style="background-image: url('/work2.jpeg');"></div>
+                                    <div class="pl-4">
+                                        <h4>Jamie Jonson</h4>
+                                        <span> avo.com</span>
+                                    </div>
+                                </div>
+                                <p class="mb-[30px]">
+                                    <a href="#" class="py-[7px] px-[10px]">View Portfolio</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 2nd line -->
+        <div class="sm:h-[500px] h-screen w-full">
+            <div class="sm:h-[550px] h-screenw-full flex sm:flex-row flex-col-reverse sm:items-center items-start sm:text-right text-left">
+                <div class="rigt h-[360px] sm:w-[60%] w-full">
+                    <div class="sm:pt-5 sm:pl-5 h-full">
+                        <div class="h-full w-full px-4">
+                            <div class="top w-[469px]">
+                                <span>Application</span>
+                                <h2 class="mb-2 font-bold sm:text-[40px] text-3xl">Miniwall Clock</h2>
+                            </div>
+                            <div class="absolute">
+                                <p class="mb-[30px] sm:w-[469px] w-1/2 sm:h-[57px] h-[120px] text-[#a0a0b4] ">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                <div class="icon flex align-middle sm:justify-end justify-start mb-4">
+                                    <div class="h-[60px] w-[60px] rounded-full bg-cover bg-no-repeat object-cover" style="background-image: url('/work4.jpeg');"></div>
+                                    <div class="pl-4">
+                                        <h4>Jamie Jonson</h4>
+                                        <span> avo.com</span>
+                                    </div>
+                                </div>
+                                <p class="mb-[30px]">
+                                    <a href="#" class="py-[7px] px-[10px]">View Portfolio</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="left h-[550px] sm:w-[40%] w-full bg-cover bg-no-repeat object-cover" style="background-image: url('/work3.jpeg');"></div>
+            </div>
+        </div>>
+        <!-- 3rd line -->
+        <div class="sm:h-[500px] h-screen w-full ">
+            <div class="sm:h-[550px] h-screen w-full flex sm:flex-row flex-col items-center">
+                <div class="left h-[550px] sm:w-[40%] w-full bg-cover bg-no-repeat object-cover" style="background-image: url('/work5.jpeg');"></div>
+                <div class="rigt h-[360px] sm:w-[60%] w-full ">
+                    <div class="sm:pt-5 sm:pl-5 h-full">
+                        <div class="h-full w-full px-4">
+                            <div class="top">
+                                <span>Web Design</span>
+                                <h2 class="mb-2 font-bold sm:text-[40px] text-3xl">Cassette tape</h2>
+                            </div>
+                            <div class="absolute">
+                                <p class="mb-[30px] sm:w-[469px] w-1/2 sm:h-[57px] h-[120px] text-[#a0a0b4]">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                <div class="icon flex align-middle items-center mb-4">
+                                    <div class="h-[60px] w-[60px] rounded-full bg-cover bg-no-repeat object-cover" style="background-image: url('/work6.jpeg');"></div>
+                                    <div class="pl-4">
+                                        <h4>Jamie Jonson</h4>
+                                        <span> avo.com</span>
+                                    </div>
+                                </div>
+                                <p class="mb-[30px]">
+                                    <a href="#" class="py-[7px] px-[10px]">View Portfolio</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 4th line -->
+        <div class="sm:h-[500px] h-screen w-full">
+            <div class="sm:h-[550px] h-screenw-full flex sm:flex-row flex-col-reverse sm:items-center items-start sm:text-right text-left">
+                <div class="rigt h-[360px] sm:w-[60%] w-full">
+                    <div class="sm:pt-5 sm:pl-5 h-full">
+                        <div class="h-full w-full px-4">
+                            <div class="top w-[469px]">
+                                <span>Application</span>
+                                <h2 class="mb-2 font-bold sm:text-[40px] text-3xl">Miniwall Clock</h2>
+                            </div>
+                            <div class="absolute">
+                                <p class="mb-[30px] sm:w-[469px] w-1/2 sm:h-[57px] h-[120px] text-[#a0a0b4] ">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                <div class="icon flex align-middle sm:justify-end justify-start mb-4">
+                                    <div class="h-[60px] w-[60px] rounded-full bg-cover bg-no-repeat object-cover" style="background-image: url('/work4.jpeg');"></div>
+                                    <div class="pl-4">
+                                        <h4>Jamie Jonson</h4>
+                                        <span> avo.com</span>
+                                    </div>
+                                </div>
+                                <p class="mb-[30px]">
+                                    <a href="#" class="py-[7px] px-[10px]">View Portfolio</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="left h-[550px] sm:w-[40%] w-full bg-cover bg-no-repeat object-cover" style="background-image: url('/work7.jpeg');"></div>
+            </div>
+        </div>
+        <!-- 5th line -->
+        <div class="sm:h-[500px] h-screen w-full">
+            <div class="sm:h-[550px] h-screen w-full  flex sm:flex-row flex-col items-center">
+                <div class="left h-[550px] sm:w-[40%] w-full bg-cover bg-no-repeat object-cover" style="background-image: url('/work8.jpeg');"></div>
+                <div class="rigt h-[360px] sm:w-[60%] w-full">
+                    <div class="sm:pt-5 sm:pl-5 h-full">
+                        <div class="h-full w-full px-4">
+                            <div class="top">
+                                <span>Web Design</span>
+                                <h2 class="mb-2 font-bold sm:text-[40px] text-3xl">Cassette tape</h2>
+                            </div>
+                            <div class="absolute">
+                                <p class="mb-[30px] sm:w-[469px] w-1/2 sm:h-[57px] h-[120px] text-[#a0a0b4]">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                <div class="icon flex align-middle items-center mb-4">
+                                    <div class="h-[60px] w-[60px] rounded-full bg-cover bg-no-repeat object-cover" style="background-image: url('/work4.jpeg');"></div>
+                                    <div class="pl-4">
+                                        <h4>Jamie Jonson</h4>
+                                        <span> avo.com</span>
+                                    </div>
+                                </div>
+                                <p class="mb-[30px]">
+                                    <a href="#" class="py-[7px] px-[10px]">View Portfolio</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 6th line -->
+        <div class="sm:h-[500px] h-screen w-full">
+            <div class="sm:h-[550px] h-screenw-full flex sm:flex-row flex-col-reverse sm:items-center items-start sm:text-right text-left">
+                <div class="rigt h-[360px] sm:w-[60%] w-full">
+                    <div class="sm:pt-5 sm:pl-5 h-full">
+                        <div class="h-full w-full px-4">
+                            <div class="top w-[469px]">
+                                <span>Application</span>
+                                <h2 class="mb-2 font-bold sm:text-[40px] text-3xl">Miniwall Clock</h2>
+                            </div>
+                            <div class="absolute">
+                                <p class="mb-[30px] sm:w-[469px] w-1/2 sm:h-[57px] h-[120px] text-[#a0a0b4]">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                <div class="icon flex align-middle sm:justify-end justify-start mb-4">
+                                    <div class="h-[60px] w-[60px] rounded-full bg-cover bg-no-repeat object-cover" style="background-image: url('/work4.jpeg');"></div>
+                                    <div class="pl-4">
+                                        <h4>Jamie Jonson</h4>
+                                        <span> avo.com</span>
+                                    </div>
+                                </div>
+                                <p class="mb-[30px]">
+                                    <a href="#" class="py-[7px] px-[10px]">View Portfolio</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="left h-[550px] sm:w-[40%] w-full bg-cover bg-no-repeat object-cover" style="background-image: url('/work9.jpeg');"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- section4 -->
+<section class="md:h-[870px] min-h-screen w-full pt-48 flex justify-center text-black">
+    <div class="md:max-w-[1030px] md:h-[472px] w-full h-auto md:mx-auto mx-52 py-[15px] ">
+      <div class="row mb-12 -mx-[15px] flex justify-center">
+        <div class="px-[15px] flex justify-center"><h2 class="text-4xl mb-4 font-extrabold font-nono ">Clients Says About Us?</h2></div>
+      </div>
+      <!-- slider -->
+      <div class="overflow-hidden py-8">
+        <div class="flex gap-4 animate-slide">
+          <!-- Client 1 -->
+          <div class="md:h-267px md:w-[303px] w-1/2 py-6 px-5 bg-[#F3F3F3] rounded-md  flex-shrink-0">
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <div class="flex justify-center mt-4">
+              <img class="h-[80px] w-[80px] rounded-full" src="/about (4).jpeg" alt="client 1">
+              <div class="pl-4">
+                <p>Jamie Jonson</p>
+                <span>Marketing Manager</span>
+              </div>
+            </div>
+          </div>
+          <!-- Client 2 -->
+          <div class="md:h-267px md:w-[303px] w-1/2  py-6 px-5 bg-[#F3F3F3] rounded-md  flex-shrink-0">
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <div class="flex justify-center mt-4">
+              <img class="h-[80px] w-[80px] rounded-full" src="/about (6).jpeg" alt="client 2">
+              <div class="pl-4">
+                <p>Jane Doe</p>
+                <span>Project Manager</span>
+              </div>
+            </div>
+          </div>
+          <!-- Client 3 -->
+          <div class="md:h-267px md:w-[303px] w-1/2  py-6 px-5 bg-[#F3F3F3] rounded-md  flex-shrink-0">
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <div class="flex justify-center mt-4">
+              <img class="h-[80px] w-[80px] rounded-full" src="/about (7).jpeg" alt="client 2">
+              <div class="pl-4">
+                <p>Jane Doe</p>
+                <span>Project Manager</span>
+              </div>
+            </div>
+          </div>
+          <!-- Client 4 -->
+          <div class="md:h-267px md:w-[303px] w-1/2  py-6 px-5 bg-[#F3F3F3] rounded-md  flex-shrink-0">
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <div class="flex justify-center mt-4">
+              <img class="h-[80px] w-[80px] rounded-full" src="/about (8).jpeg" alt="client 2">
+              <div class="pl-4">
+                <p>Jane Doe</p>
+                <span>Project Manager</span>
+              </div>
+            </div>
+          </div>
+          <!-- Client 5 -->
+          <div class="md:h-267px md:w-[303px] w-1/2 py-6 px-5 bg-[#F3F3F3] rounded-md  flex-shrink-0">
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <div class="flex justify-center mt-4">
+              <img class="h-[80px] w-[80px] rounded-full" src="/about (9).jpeg" alt="client 2">
+              <div class="pl-4">
+                <p>Jane Doe</p>
+                <span>Project Manager</span>
+              </div>
+            </div>
+          </div>
+          <!-- Client 6 -->
+          <div class="md:h-267px md:w-[303px] w-1/2  py-6 px-5 bg-[#F3F3F3] rounded-md  flex-shrink-0">
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <div class="flex justify-center mt-4">
+              <img class="h-[80px] w-[80px] rounded-full" src="/about (10).jpeg" alt="client 2">
+              <div class="pl-4">
+                <p>Jane Doe</p>
+                <span>Project Manager</span>
+              </div>
+            </div>
+          </div>
+          <!-- Client 7 -->
+          <div class="md:h-267px md:w-[303px] w-1/2  py-6 px-5 bg-[#F3F3F3] rounded-md  flex-shrink-0">
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <div class="flex justify-center mt-4">
+              <img class="h-[80px] w-[80px] rounded-full" src="/about (11).jpeg" alt="client 2">
+              <div class="pl-4">
+                <p>Jane Doe</p>
+                <span>Project Manager</span>
+              </div>
+            </div>
+          </div>
+          <!-- Client 8 -->
+          <div class="md:h-267px md:w-[303px] w-1/2  py-6 px-5 bg-[#F3F3F3] rounded-md  flex-shrink-0">
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <div class="flex justify-center mt-4">
+              <img class="h-[80px] w-[80px] rounded-full" src="/about (12).jpeg" alt="client 2">
+              <div class="pl-4">
+                <p>Jane Doe</p>
+                <span>Project Manager</span>
+              </div>
+            </div>
+          </div>
+          <!-- Add more client divs as needed -->
+        </div>
+      </div> 
+      </div>
+      
+    </div>
+  </section>
+  <!-- section5 -->
+   <section>
+
+   </section>
+<!-- footer  -->
+<footer class="bg-black sm:h-[100vh] sm:w-full h-auto w-screen py-48 clip-bottom flex justify-center">
+  <div class="container sm:max-w-[1000px] sm:h-[381px] h-screen w-full mx-auto px-[15px] grid sm:grid-cols-5 it text-[#7E7E7E] relative top-20  ">
+    <div class=" px-[15px] sm:h-[289px] sm:w-full h-auto w-1/2">
+      <h2 class="text-lg font-nono text-white font-bold text-left sm:mb-[40px] mb-3 ">avo</h2>
+      <p class="mb-4 ">Far far away, behind the word mountains, far from the countries.</p>
+      <ul class="sm:mt-12 mt-3 sm:mb-4 flex ">
+        <a class="h-10 w-10 bg-transparent rounded-full mr-[10px] text-center pt-[10px]" href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
+        <a class="h-10 w-10 bg-transparent rounded-full mr-[10px] text-center pt-[10px]" href="#"><li><i class="fa-brands fa-facebook"></i></li></a>
+        <a class="h-10 w-10 bg-transparent rounded-full mr-[10px] text-center pt-[10px]" href="#"><mr><i class="fa-brands fa-instagram"></i></li></a>
+      </ul>
+    </div>
+    <div class="px-[15px] sm:h-[289px] sm:w-full h-auto w-1/2 ">
+      <div class="mb-6 sm:ml-6 ">
+        <h2 class="text-lg font-nono text-white font-bold text-left sm:mb-[40px] mb-5" >Community</h2>
+      <ul>
+        <li class="h-[28px]"><a href="#"><span><i class="fa-solid fa-chevron-right font-extrabold mr-2"></i></span> Projects</a></li>
+        <li class="h-[28px]"><a href="#"><span><i class="fa-solid fa-chevron-right font-extrabold mr-2"></i></span> Team</a></li>
+        <li class="h-[28px]"><a href="#"><span><i class="fa-solid fa-chevron-right font-extrabold mr-2"></i> </span>Reviews</a></li>
+        <li class="h-[28px]"><a href="#"><span><i class="fa-solid fa-chevron-right font-extrabold mr-2"></i> </span>FAQs</a></li>
+      </ul>
+      </div>
+    </div>
+    <div class="px-[15px] sm:h-[289px] sm:w-full h-auto w-1/2 ">
+      <div class="mb-6">
+        <h2 class="text-lg font-nono text-white font-bold text-left sm:mb-[40px] mb-5" >About Us</h2>
+        <ul>
+        <li class="h-[28px]"><a href="#"><span><i class="fa-solid fa-chevron-right font-extrabold mr-2"></i></span>Our Story </a></li>
+        <li class="h-[28px]"><a href="#"><span><i class="fa-solid fa-chevron-right font-extrabold mr-2"></i></span>Meet the team </a></li>
+        <li class="h-[28px]"><a href="#"><span><i class="fa-solid fa-chevron-right font-extrabold mr-2"></i> </span>Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class=" px-[15px] sm:h-[289px] sm:w-full h-auto w-1/2">
+      <div class="mb-6 ">
+        <h2 class="text-lg font-nono text-white font-bold text-left mb-[40px] " >Company</h2>
+      <ul>
+        <li class="h-[28px]"><a href="#"><span><i class="fa-solid fa-chevron-right font-extrabold mr-2"></i></span>About Us</a></li>
+        <li class="h-[28px]"><a href="#"><span><i class="fa-solid fa-chevron-right font-extrabold mr-2"></i></span>Press</a></li>
+        <li class="h-[28px]"><a href="#"><span><i class="fa-solid fa-chevron-right font-extrabold mr-2"></i></span>Contact</a></li>
+        <li class="h-[28px]"><a href="#"><span><i class="fa-solid fa-chevron-right font-extrabold mr-2"></i></span>Careers</a></li>
+      </ul>
+      </div>
+    </div>
+    <div class="px-[15px] sm:h-[289px] sm:w-full ">
+      <div class="mb-6">
+        <h2 class="text-lg font-nono text-white font-bold text-left sm:mb-[40px] mb-5" >Have a Questions?</h2>
+      <ul>
+        <li class="flex gap-4 mb-[15px]">
+          <span class=" pt-[2px]"><i class="fa-solid fa-street-view"></i></span>
+          <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+        </li>
+        <li class="flex gap-4 mb-[15px]">
+          <span class=" pt-[2px]"><i class="fa-solid fa-phone"></i></span>
+          <span>+2 392 3929 210</span>
+        </li>
+        <li class="flex mb-[15px]">
+          <span class="pr-6 pt-[2px]"><i class="fa-solid fa-envelope"></i></span>
+          <span>info@yourdomain.com</span>
+        </li>
+      </ul>
+      </div>
+    </div>
+    <div class="sm:max-w-[1000px] w-screen h-7 mx-auto px-[15px] mb-4 ">
+      <p class=" text-white h-fit text-center stext-nowrap sm:w-[970px] w-fit">Copyright ©2024 All rights reserved | This template is made with  by
+        <i class="fa-solid fa-heart"></i> <a class="text-red-600 cursor-pointer" href="#">Colorlib</a>
+      </p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./output.css" rel="stylesheet">
+  <style>
+    @layer utilities {
+      .clip-wave {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 60% 95%, 0% 80%, 0% 0%);
+  }
+      .clip-bottom {
+        clip-path: polygon(0% 20%, 40% 5%, 100% 20%, 100% 100%, 0% 100%);
+  }
+    }
+  </style>
+</head>
+<body>
+<!-- navbar -->
+<section class="navbar sm:h-[600px] sm:min-w-full bg-no-repeat bg-cover clip-wave bg-black bg-hero-bg">
+  <nav class="w-full h-[69px]relative top-5 py-2 px-4 flex">
+    <div class="container max-w-[1000px] h-full mx-auto flex justify-between items-center px-4">
+      <div class="logo text-[24px] text-white font-semibold">
+        <a href="#">a<span class="text-red-700">v</span>o</a>
+      </div>
+      <div class="menu-content text-white">
+        <ul class="sm:flex sm:gap-11 hidden ">
+          <li class="hover:text-red-700 transition-all duration-200 ease-linear cursor-pointer"><a href="home.html">Home</a></li>
+          <li class="hover:text-red-700 transition-all duration-200 ease-linear cursor-pointer"><a href="about.html">About</a></li>
+          <li class="hover:text-red-700 transition-all duration-200 ease-linear cursor-pointer"><a href="work.html">Work</a></li>
+          <li class="hover:text-red-700 transition-all duration-200 ease-linear cursor-pointer"><a href="blog.html">Blog</a></li>
+          <li class="hover:text-red-700 transition-all duration-200 ease-linear cursor-pointer"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ <!-- middle of section1-->
+  <div class="container h-[600px] max-w-[1000px] mx-auto px-4 relative ">
+    <div class="content-middle h-[165px] w-[727px] absolute bottom-28 group">
+      <div class="bread-crumbs h-[21px] w-full mb-5">
+        <p class="text-[14px] uppercase font-semibold text-white space-x-4"><a href="#" class="hover:text-red-700 transition-all duration-200 ease-linear cursor-pointer">home <i class="fa-solid fa-chevron-right text-red-800"></i></a> <span>blog<i class="fa-solid fa-chevron-right text-red-800"></i></span></p>
+      </div>
+      <div class="bread h-[60px] w-full mb-4">
+        <h1 class="text-[40px] font-semibold uppercase text-white">blog</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- blog section -->
+<section class="bg-[#ffffff] min-h-screen w-full flex justify-center sm:py-48">
+<div class="container max-w-screen sm:max-w-[1000px] sm:h-[1280px] sm:mx-auto px-[15px] flex justify-center">
+  <div class="row grid sm:grid-cols-4 sm:grid-rows-2">
+
+    <div class="col-md-3 h-[572px] w-[250px] px-[15px] flex justify-center items-center text-left">
+      <div class="text h-full w-full">
+        <h3 class="h-[60px] w-full font-nono text-xl mb-4">
+          <a href="blog.html">Amplify your blockchain team</a>
+        </h3>
+        <div class="bg-cover bg-no-repeat object-cover bg-div1 h-[270px] w-full mb-5"></div>
+        <div class="h-[28px] w-full mb-4">June 01, 2020 Admin <i class="fa-solid fa-comment"></i> 3</div>
+        <p class="h-[115px] w-full mb-4 text-[#a0a0b4]">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+      </div>
+    </div>
+    <div class="col-md-3 h-[572px] w-[250px] px-[15px] flex justify-center items-center text-left">
+      <div class="text h-full w-full">
+        <h3 class="h-[60px] w-full font-nono text-xl mb-4">
+          <a href="blog.html">Amplify your blockchain team</a>
+        </h3>
+        <div class="bg-cover bg-no-repeat object-cover bg-div2 h-[270px] w-full mb-5"></div>
+        <div class="h-[28px] w-full mb-4">June 01, 2020 Admin <i class="fa-solid fa-comment"></i> 3</div>
+        <p class="h-[115px] w-full mb-4 text-[#a0a0b4]">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+      </div>
+    </div>
+    <div class="col-md-3 h-[572px] w-[250px] px-[15px] flex justify-center items-center text-left">
+      <div class="text h-full w-full">
+        <h3 class="h-[60px] w-full font-nono text-xl mb-4">
+          <a href="blog.html">Amplify your blockchain team</a>
+        </h3>
+        <div class="bg-cover bg-no-repeat object-cover bg-div3 h-[270px] w-full mb-5"></div>
+        <div class="h-[28px] w-full mb-4">June 01, 2020 Admin <i class="fa-solid fa-comment"></i> 3</div>
+        <p class="h-[115px] w-full mb-4 text-[#a0a0b4]">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+      </div>
+    </div>
+    <div class="col-md-3 h-[572px] w-[250px] px-[15px] flex justify-center items-center text-left">
+      <div class="text h-full w-full">
+        <h3 class="h-[60px] w-full font-nono text-xl mb-4">
+          <a href="blog.html">Amplify your blockchain team</a>
+        </h3>
+        <div class="bg-cover bg-no-repeat object-cover bg-div4 h-[270px] w-full mb-5"></div>
+        <div class="h-[28px] w-full mb-4">June 01, 2020 Admin <i class="fa-solid fa-comment"></i> 3</div>
+        <p class="h-[115px] w-full mb-4 text-[#a0a0b4]">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+      </div>
+    </div>
+    <div class="col-md-3 h-[572px] w-[250px] px-[15px] flex justify-center items-center text-left">
+      <div class="text h-full w-full">
+        <h3 class="h-[60px] w-full font-nono text-xl mb-4">
+          <a href="blog.html">Amplify your blockchain team</a>
+        </h3>
+        <div class="bg-cover bg-no-repeat object-cover bg-div5 h-[270px] w-full mb-5"></div>
+        <div class="h-[28px] w-full mb-4">June 01, 2020 Admin <i class="fa-solid fa-comment"></i> 3</div>
+        <p class="h-[115px] w-full mb-4 text-[#a0a0b4]">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+      </div>
+    </div>
+    <div class="col-md-3 h-[572px] w-[250px] px-[15px] flex justify-center items-center text-left">
+      <div class="text h-full w-full">
+        <h3 class="h-[60px] w-full font-nono text-xl mb-4">
+          <a href="blog.html">Amplify your blockchain team</a>
+        </h3>
+        <div class="bg-cover bg-no-repeat object-cover bg-div6 h-[270px] w-full mb-5"></div>
+        <div class="h-[28px] w-full mb-4">June 01, 2020 Admin <i class="fa-solid fa-comment"></i> 3</div>
+        <p class="h-[115px] w-full mb-4 text-[#a0a0b4]">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+      </div>
+    </div>
+    <div class="col-md-3 h-[572px] w-[250px] px-[15px] flex justify-center items-center text-left">
+      <div class="text h-full w-full">
+        <h3 class="h-[60px] w-full font-nono text-xl mb-4">
+          <a href="blog.html">Amplify your blockchain team</a>
+        </h3>
+        <div class="bg-cover bg-no-repeat object-cover bg-div7 h-[270px] w-full mb-5"></div>
+        <div class="h-[28px] w-full mb-4">June 01, 2020 Admin <i class="fa-solid fa-comment"></i> 3</div>
+        <p class="h-[115px] w-full mb-4 text-[#a0a0b4]">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+      </div>
+    </div>
+    <div class="col-md-3 h-[572px] w-[250px] px-[15px] flex justify-center items-center text-left">
+      <div class="text h-full w-full">
+        <h3 class="h-[60px] w-full font-nono text-xl mb-4">
+          <a href="blog.html">Amplify your blockchain team</a>
+        </h3>
+        <div class="bg-cover bg-no-repeat object-cover bg-div8 h-[270px] w-full mb-5"></div>
+        <div class="h-[28px] w-full mb-4">June 01, 2020 Admin <i class="fa-solid fa-comment"></i> 3</div>
+        <p class="h-[115px] w-full mb-4 text-[#a0a0b4]">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+      </div>
+    </div>
+    <div class="row mt-12 pb-12 -mx-[15px] h-24 sm:grid-cols-subgrid sm:col-span-full">
+      <ul class="h-[44px] w-full flex justify-center gap-1">
+        <li class="bg-white h-[40px] w-[40px] rounded-full border border-[#E5E5E5] text-center flex items-center justify-center hover:bg-[#D1002C] hover:text-white transition-all duration-200 ease-in"><a href="#"></a><i class="fa-solid fa-chevron-left"></i></li>
+        <li class="bg-white h-[40px] w-[40px] rounded-full border border-[#E5E5E5] text-center flex items-center justify-center hover:bg-[#D1002C] hover:text-white transition-all duration-200 ease-in"><a href="#"></a>1</li>
+        <li class="bg-white h-[40px] w-[40px] rounded-full border border-[#E5E5E5] text-center flex items-center justify-center hover:bg-[#D1002C] hover:text-white transition-all duration-200 ease-in"><a href="#"></a>2</li>
+        <li class="bg-white h-[40px] w-[40px] rounded-full border border-[#E5E5E5] text-center flex items-center justify-center hover:bg-[#D1002C] hover:text-white transition-all duration-200 ease-in"><a href="#"></a>3</li>
+        <li class="bg-white h-[40px] w-[40px] rounded-full border border-[#E5E5E5] text-center flex items-center justify-center hover:bg-[#D1002C] hover:text-white transition-all duration-200 ease-in"><a href="#"></a>4</li>
+        <li class="bg-white h-[40px] w-[40px] rounded-full border border-[#E5E5E5] text-center flex items-center justify-center hover:bg-[#D1002C] hover:text-white transition-all duration-200 ease-in"><a href="#"></a>5</li>
+        <li class="bg-white h-[40px] w-[40px] rounded-full border border-[#E5E5E5] text-center flex items-center justify-center hover:bg-[#D1002C] hover:text-white transition-all duration-200 ease-in"><a href="#"></a><i class="fa-solid fa-chevron-right"></i></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+<!-- footer -->
+<footer class="bg-black sm:h-[100vh] sm:w-full h-auto w-screen py-48 clip-bottom flex justify-center">
+  <div class="container sm:max-w-[1000px] sm:h-[381px] h-screen w-full mx-auto px-[15px] grid sm:grid-cols-5 it text-[#7E7E7E] relative top-20  ">
+    <div class=" px-[15px] sm:h-[289px] sm:w-full h-auto w-1/2">
+      <h2 class="text-lg font-nono text-white font-bold text-left sm:mb-[40px] mb-3 ">avo</h2>
+      <p class="mb-4 ">Far far away, behind the word mountains, far from the countries.</p>
+      <ul class="sm:mt-12 mt-3 sm:mb-4 flex ">
+        <a class="h-10 w-10 bg-transparent rounded-full mr-[10px] text-center pt-[10px]" href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
+        <a class="h-10 w-10 bg-transparent rounded-full mr-[10px] text-center pt-[10px]" href="#"><li><i class="fa-brands fa-facebook"></i></li></a>
+        <a class="h-10 w-10 bg-transparent rounded-full mr-[10px] text-center pt-[10px]" href="#"><mr><i class="fa-brands fa-instagram"></i></li></a>
+      </ul>
+    </div>
+    <div class="px-[15px] sm:h-[289px] sm:w-full h-auto w-1/2 ">
+      <div class="mb-6 sm:ml-6 ">
+        <h2 class="text-lg font-nono text-white font-bold text-left sm:mb-[40px] mb-5" >Community</h2>
+      <ul>
+        <li class="h-[28px]"><a href="#"><span><i class="fa-solid fa-chevron-right font-extrabold mr-2"></i></span> Projects</a></li>
+        <li class="h-[28px]"><a href="#"><span><i class="fa-solid fa-chevron-right font-extrabold mr-2"></i></span> Team</a></li>
+        <li class="h-[28px]"><a href="#"><span><i class="fa-solid fa-chevron-right font-extrabold mr-2"></i> </span>Reviews</a></li>
+        <li class="h-[28px]"><a href="#"><span><i class="fa-solid fa-chevron-right font-extrabold mr-2"></i> </span>FAQs</a></li>
+      </ul>
+      </div>
+    </div>
+    <div class="px-[15px] sm:h-[289px] sm:w-full h-auto w-1/2 ">
+      <div class="mb-6">
+        <h2 class="text-lg font-nono text-white font-bold text-left sm:mb-[40px] mb-5" >About Us</h2>
+        <ul>
+        <li class="h-[28px]"><a href="#"><span><i class="fa-solid fa-chevron-right font-extrabold mr-2"></i></span>Our Story </a></li>
+        <li class="h-[28px]"><a href="#"><span><i class="fa-solid fa-chevron-right font-extrabold mr-2"></i></span>Meet the team </a></li>
+        <li class="h-[28px]"><a href="#"><span><i class="fa-solid fa-chevron-right font-extrabold mr-2"></i> </span>Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class=" px-[15px] sm:h-[289px] sm:w-full h-auto w-1/2">
+      <div class="mb-6 ">
+        <h2 class="text-lg font-nono text-white font-bold text-left mb-[40px] " >Company</h2>
+      <ul>
+        <li class="h-[28px]"><a href="#"><span><i class="fa-solid fa-chevron-right font-extrabold mr-2"></i></span>About Us</a></li>
+        <li class="h-[28px]"><a href="#"><span><i class="fa-solid fa-chevron-right font-extrabold mr-2"></i></span>Press</a></li>
+        <li class="h-[28px]"><a href="#"><span><i class="fa-solid fa-chevron-right font-extrabold mr-2"></i></span>Contact</a></li>
+        <li class="h-[28px]"><a href="#"><span><i class="fa-solid fa-chevron-right font-extrabold mr-2"></i></span>Careers</a></li>
+      </ul>
+      </div>
+    </div>
+    <div class="px-[15px] sm:h-[289px] sm:w-full ">
+      <div class="mb-6">
+        <h2 class="text-lg font-nono text-white font-bold text-left sm:mb-[40px] mb-5" >Have a Questions?</h2>
+      <ul>
+        <li class="flex gap-4 mb-[15px]">
+          <span class=" pt-[2px]"><i class="fa-solid fa-street-view"></i></span>
+          <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+        </li>
+        <li class="flex gap-4 mb-[15px]">
+          <span class=" pt-[2px]"><i class="fa-solid fa-phone"></i></span>
+          <span>+2 392 3929 210</span>
+        </li>
+        <li class="flex mb-[15px]">
+          <span class="pr-6 pt-[2px]"><i class="fa-solid fa-envelope"></i></span>
+          <span>info@yourdomain.com</span>
+        </li>
+      </ul>
+      </div>
+    </div>
+    <div class="sm:max-w-[1000px] w-screen h-7 mx-auto px-[15px] mb-4 ">
+      <p class=" text-white h-fit text-center stext-nowrap sm:w-[970px] w-fit">Copyright ©2024 All rights reserved | This template is made with  by
+        <i class="fa-solid fa-heart"></i> <a class="text-red-600 cursor-pointer" href="#">Colorlib</a>
+      </p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
